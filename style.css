@@ -1,0 +1,53 @@
+body { 
+    background-color: #dedede;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.5s ease;
+}
+.kartu{
+    margin: auto;
+    width: 350px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+.kartu img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu button {
+    padding:10px;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.kartu button.tombol-terang{
+    display:none;
+    background-color: #ddd;
+}
+
+.kartu button.tombol-gelap{
+   background-color: #666;
+   color: #fff;
+}
+
+/*efek gelap*/
+body.gelap {
+    background-color: #000;
+}
+.gelap .kartu {
+    background-color: #333;
+    color: #fff;
+}
+
+.gelap .kartu button.tombol-terang{
+    display: inline;
+}
+
+.gelap .kartu button.tombol-gelap{
+    display: none;
+}
